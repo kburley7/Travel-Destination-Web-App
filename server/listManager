@@ -1,0 +1,93 @@
+const fs = require('fs');
+const path = require('path');
+
+const filePath = path.join(__dirname, 'data', 'lists.json');
+
+// Helper function to load lists from the JSON file
+function loadLists() {
+    try {
+        const data = fs.readFileSync(filePath, 'utf8');
+        return JSON.parse(data);
+    } catch (error) {
+        console.error("Error reading lists file:", error);
+        return {};
+    }
+}
+
+// Helper function to save lists to the JSON file
+function saveLists(lists) {
+    fs.writeFileSync(filePath, JSON.stringify(lists, null, 2));
+}
+
+// Create a new list with a given name
+function createList(listName) {
+    // Load the existing lists (assumes loadLists() retrieves the list data)
+    const lists = loadLists();
+
+    // Check if the list already exists
+    if (lists[listName]) {
+        return { error: 'List already exists' };
+    }
+
+    // Create a new object with 'Name' as the list name (string) and 'IDs' as an empty array
+    lists[listName] = {
+        Name: listName,  // Name is the list name (string)
+        IDs: []          // IDs is an empty array of numbers
+    };
+
+    // Save the updated lists (assumes saveLists() stores the list data)
+    saveLists(lists);
+
+    return { success: true };
+}
+
+// Save destination IDs to an existing list (overwrite if list exists)
+function saveToList(listName, destinationIds) {
+    // Load the existing lists (assumes loadLists() retrieves the list data)
+    const lists = loadLists();
+
+    // Check if the list exists
+    if (!lists[listName]) {
+        return { error: 'List does not exist' };
+    }
+
+    // Update the list with the new 'IDs' array
+    lists[listName].IDs = destinationIds;  // Set the 'IDs' property to the provided array of destination IDs
+    saveLists(lists);  // Save the updated lists object
+
+    return { success: true };
+}
+
+
+// Get the destination IDs for a given list
+function getList(listName) {
+    const lists = loadLists();
+    if (!lists[listName]) {
+        return { error: 'List does not exist' };
+    }
+    return lists[listName];
+}
+
+// Delete a list by name
+function deleteList(listName) {
+    const lists = loadLists();
+    if (!lists[listName]) {
+        return { error: 'List does not exist' };
+    }
+    delete lists[listName];
+    saveLists(lists);
+    return { success: true };
+}
+
+function getAllLists() {
+    try {
+        const lists = loadLists();  // Ensure loadLists() is working as expected
+        return lists;
+    } catch (error) {
+        console.error('Error loading lists:', error);
+        throw error;  // Re-throw to be caught in the GET route
+    }
+}
+
+
+module.exports = { createList, saveToList, getList, deleteList, getAllLists };

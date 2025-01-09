@@ -1,0 +1,143 @@
+commit 3ca33f42b72f33ccc145fc2cc91ac62f2287f44c
+Author: KyleBurley <kburley7@uwo.ca>
+Date:   Sun Dec 1 17:47:25 2024 -0500
+
+    fixed logging out for admin
+
+commit ff9a2df6ca3116fa82fe3e48d796696946bd61cd
+Author: KyleBurley <kburley7@uwo.ca>
+Date:   Sun Dec 1 17:45:31 2024 -0500
+
+    added admin login function
+
+commit abd689de7dd62f065d96f83f8b898ab0f7f14605
+Author: KyleBurley <kburley7@uwo.ca>
+Date:   Sun Dec 1 16:49:36 2024 -0500
+
+    added function for update password button
+
+commit f63204c7181b9d3c71389897bd5f740f8f93eca8
+Author: KyleBurley <kburley7@uwo.ca>
+Date:   Sun Dec 1 16:24:05 2024 -0500
+
+    added update password backend function
+
+commit 6af17c7d41bf1b3f764fe503cedf54b922603f4f
+Author: KyleBurley <kburley7@uwo.ca>
+Date:   Sun Dec 1 16:15:28 2024 -0500
+
+    added endpoint for viewing reveiws on a list
+
+commit 96c4c48b4b73b18bba4662e996db651b44aac4e5
+Author: KyleBurley <kburley7@uwo.ca>
+Date:   Sun Dec 1 16:12:59 2024 -0500
+
+    added ui for viewing reviews
+
+commit 20c1d950d7dcb50a0a6b04ef2f5f0ecc5eeb1af1
+Author: KyleBurley <kburley7@uwo.ca>
+Date:   Sun Dec 1 13:54:56 2024 -0500
+
+    added average review score visability
+
+commit d4240feaaf8dc48e941a1d224e149b8737cf47fb
+Author: KyleBurley <kburley7@uwo.ca>
+Date:   Sun Dec 1 13:42:44 2024 -0500
+
+    created modal interface for leaving a review
+
+commit d2e1b160cac78810f49b4ae7307e430ec9e72e69
+Author: KyleBurley <kburley7@uwo.ca>
+Date:   Sun Dec 1 13:28:04 2024 -0500
+
+    added endpoint for storing reviews
+
+commit 660b3e579b0bf2ead547ff04581bfbccd7d3065e
+Author: KyleBurley <kburley7@uwo.ca>
+Date:   Sun Dec 1 03:12:05 2024 -0500
+
+    DMCA notice and takedown policy added
+
+commit f78d26aae74f6fb9cc554dc6b93c4edf9ba7a204
+Author: KyleBurley <kburley7@uwo.ca>
+Date:   Sun Dec 1 03:02:35 2024 -0500
+
+    added AUP with css
+
+commit 3af6226d41bd65160163b753f06fb532f2b45bd7
+Author: KyleBurley <kburley7@uwo.ca>
+Date:   Sun Dec 1 02:59:40 2024 -0500
+
+    added privacy policy
+
+commit 167a515cdc392f370f26a4ff3a6d497d0c08f45c
+Author: KyleBurley <kburley7@uwo.ca>
+Date:   Sun Dec 1 02:53:16 2024 -0500
+
+    added soft matching for searches
+
+commit 8a29db04f191c3bdcd1e1067f99a30a9b55e96ed
+Author: KyleBurley <kburley7@uwo.ca>
+Date:   Sun Dec 1 02:47:10 2024 -0500
+
+    added input validation for email
+
+commit ab8d5ba7591470f5095a03c5dd4f84e1513a07f5
+Author: KyleBurley <kburley7@uwo.ca>
+Date:   Sun Dec 1 02:40:50 2024 -0500
+
+    added the editing list function
+
+commit 5f3bd58a1fe2e115f9d77078940e569eea913416
+Author: KyleBurley <kburley7@uwo.ca>
+Date:   Sun Dec 1 01:50:24 2024 -0500
+
+    added the showing lists functionality
+
+commit 8d4fefde886875480e5be48b0fc3fed310e4eb4a
+Author: KyleBurley <kburley7@uwo.ca>
+Date:   Sun Dec 1 00:09:34 2024 -0500
+
+    saving list functionality
+
+commit 8b403c3eed47b6a2bc5a185e81f2f81d39bdb439
+Author: KyleBurley <kburley7@uwo.ca>
+Date:   Sat Nov 30 18:41:07 2024 -0500
+
+    full authentication functionality
+
+commit e3eea28c77bc0ac694e74b5f57c0c841a26fe05e
+Author: KyleBurley <kburley7@uwo.ca>
+Date:   Fri Nov 29 00:42:19 2024 -0500
+
+    search functioanlity for unauthenticated users complete
+
+commit 88e349d4803b77f939076d647518a464db158001
+Author: KyleBurley <kburley7@uwo.ca>
+Date:   Thu Nov 28 17:52:24 2024 -0500
+
+    added search bar on main page
+
+commit de31cd4ac24b91b83c3f001d6da8c9429bea25b0
+Author: KyleBurley <kburley7@uwo.ca>
+Date:   Wed Nov 27 23:04:06 2024 -0500
+
+    added login popup onclick of signin button
+
+commit 3fbf2e2bb2230903c994c4feb45e5c767b88e52a
+Author: KyleBurley <kburley7@uwo.ca>
+Date:   Wed Nov 27 21:38:38 2024 -0500
+
+    added react-vite npm module
+
+commit f36126371fc34f44a9fc85411e4b66013d076665
+Author: KyleBurley <kburley7@uwo.ca>
+Date:   Wed Nov 27 15:05:34 2024 -0500
+
+    added firebase sdk
+
+commit ee4a23e57318e3f0731160c1bb115ffb7c54e069
+Author: github-classroom[bot] <66690702+github-classroom[bot]@users.noreply.github.com>
+Date:   Sun Nov 3 23:57:54 2024 +0000
+
+    Initial commit

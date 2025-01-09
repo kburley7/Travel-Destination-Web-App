@@ -1,0 +1,76 @@
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+
+  nav button {
+    padding: 8px 16px; /* Properly add padding */
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Add a pointer cursor on hover */
+    font-weight: bold; /* Fix font property */
+    border-radius: 4px; /* Optional: Add rounded corners */
+    box-sizing: border-box; /* Ensure proper padding and sizing */
+    flex:none;
+    right: 50px;
+  padding-right: 35px;
+}
+  
+  
+  .navbar {
+    position: fixed; /* Keep it fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f9fa;
+    padding: 10px 20px; /* Horizontal and vertical padding */
+    border-bottom: 1px solid #ddd;
+    z-index: 1000; /* Ensure it appears above other elements */
+    display: flex; /* Enable flexbox for layout */
+    justify-content: space-between; /* Space between logo/links and button */
+    align-items: center; /* Align items vertically */
+  }
+  
+  .navbar-username {
+    margin-left: auto;
+    font-weight: bold;
+    color: #007bff;
+    padding: 0 15px;
+  }
+
+  .navbar-logged-in {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logout-button {
+    background-color: #ff4d4d;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .logout-button:hover {
+    background-color: #e60000;
+  }
+  

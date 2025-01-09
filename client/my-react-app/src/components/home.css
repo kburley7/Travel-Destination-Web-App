@@ -1,0 +1,237 @@
+/* Base styles for the dark theme */
+body {
+  background-color: #121212; /* Dark background */
+  color: #ffffff; /* Light text */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  min-height: 100vh; /* Full viewport height */
+}
+
+/* Main container with padding to avoid overlap */
+.home-container {
+  width: 100%; /* Full width */
+  max-width: 1200px; /* Limit width on larger screens */
+  padding: 80px 20px 20px; /* Top padding accounts for navbar height */
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  box-sizing: border-box;
+}
+
+
+/* Search Bar Section */
+.searchBar {
+  width: 100%; /* Full width within the container */
+  max-width: 800px; /* Cap the width for readability */
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center; /* Center text inside */
+}
+
+.searchBar label {
+  color: #a0a0a0;
+  font-weight: bold;
+}
+
+.searchBar input {
+  width: calc(100% - 20px); /* Full width minus padding */
+  max-width: 600px; /* Optional: Limit width for inputs */
+  padding: 10px;
+  margin: 10px auto;
+  background-color: #2e2e2e;
+  color: #ffffff;
+  border: 1px solid #3a3a3a;
+  border-radius: 4px;
+}
+
+.searchBar input:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.searchBar button {
+  width: 50%; /* Centered and moderate width */
+  max-width: 200px; /* Cap button width */
+  padding: 15px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.searchBar button:hover {
+  background-color: #0056b3;
+}
+
+/* Results Section */
+.search-results {
+  width: 100%; /* Full width within the container */
+  max-width: 1200px; /* Limit width for results */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+  gap: 20px;
+}
+
+.result-container {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center; /* Center content inside the container */
+}
+
+.result-container h3 {
+  margin: 0;
+  color: #007bff;
+  font-size: 1.5rem;
+}
+
+.result-container p {
+  margin: 10px 0;
+}
+
+.result-container button {
+  margin-top: 10px;
+  width: 100%; /* Full-width button */
+  max-width: 200px;
+  padding: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.result-container button:hover {
+  background-color: #0056b3;
+}
+
+.expanded-content {
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #2e2e2e;
+  border-left: 4px solid #007bff;
+}
+.duckduckgo-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #007bff; /* Button background */
+  color: #ffffff; /* Button text color */
+  text-decoration: none; /* Remove underline */
+  font-size: 1rem;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.duckduckgo-button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Create List Section */
+.list-info {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  background-color: #1e1e1e; /* Dark background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  font-family: Arial, sans-serif;
+}
+
+.list-info h2 {
+  color: #ffffff; /* Light text */
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: left;
+  border-bottom: 1px solid #333; /* Subtle divider */
+  padding-bottom: 5px;
+}
+
+.list-info input,
+.list-info textarea,
+.list-info select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  font-size: 1em;
+  box-sizing: border-box;
+  background-color: #2e2e2e; /* Darker background for inputs */
+  color: #ffffff; /* Light text */
+}
+
+.list-info input:focus,
+.list-info textarea:focus,
+.list-info select:focus {
+  border-color: #007bff; /* Highlight on focus */
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue glow */
+}
+
+.added-destinations {
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 600px;
+  background-color: #1e1e1e; /* Dark background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.added-destinations h2 {
+  color: #ffffff; /* Light text */
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  text-align: left;
+  border-bottom: 1px solid #333;
+  padding-bottom: 5px;
+}
+
+.added-destinations ul {
+  list-style-type: disc;
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.added-destinations li {
+  color: #cccccc; /* Muted light text */
+  margin-bottom: 10px;
+}
+
+.added-destinations button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #ffffff; /* Light text */
+  background-color: #007bff; /* Blue button */
+  transition: background-color 0.3s ease;
+}
+
+.added-destinations button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.clear-list-button {
+  background-color: #dc3545; /* Red button */
+}
+
+.clear-list-button:hover {
+  background-color: #a71d2a; /* Darker red on hover */
+}

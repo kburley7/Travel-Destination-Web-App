@@ -1,0 +1,191 @@
+/* Base styling for the lists page */
+body {
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+  }
+  
+  /* Main container for the lists page */
+  .lists-page {
+    width: 100%;
+    max-width: 1200px;
+    padding: 80px 20px 20px; /* Consistent padding with home.css */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  /* Section headers */
+  .lists-page h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .lists-page h2 {
+    font-size: 1.5rem;
+    color: #a0a0a0;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #333;
+    padding-bottom: 5px;
+  }
+  
+  /* List container */
+  .list-container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .list-container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  }
+  
+  .list-container h3 {
+    color: #007bff;
+    font-size: 1.25rem;
+    margin: 0 0 10px 0;
+  }
+  
+  .list-container p {
+    color: #a0a0a0;
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  /* Expanded list details */
+  .list-details {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #2e2e2e;
+    border-radius: 6px;
+    border-left: 4px solid #007bff;
+  }
+  
+  .list-details p {
+    font-size: 1rem;
+    color: #dddddd;
+    margin: 5px 0;
+  }
+  
+  .list-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+  }
+  
+  .list-details ul li {
+    padding: 10px;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .list-details ul li:hover {
+    background-color: #3a3a3a;
+  }
+  
+  .list-details ul li strong {
+    color: #ffffff;
+  }
+  
+  /* Destination details */
+  .destination-details {
+    margin-top: 10px;
+    padding: 15px;
+    background-color: #3a3a3a;
+    border-radius: 6px;
+    border-left: 4px solid #0056b3;
+  }
+  
+  .destination-details p {
+    font-size: 0.9rem;
+    color: #cccccc;
+    margin: 5px 0;
+  }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content h2 {
+    margin-bottom: 20px;
+}
+
+.modal-content label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.modal-content textarea,
+.modal-content input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.reviews-container {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: #2e2e2e; /* Match dark theme */
+    border-radius: 6px;
+    border-left: 4px solid #007bff; /* Blue accent */
+}
+
+.reviews-container h4 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.review-item {
+    padding: 10px;
+    border-bottom: 1px solid #333;
+    margin-bottom: 10px;
+}
+
+.review-item:last-child {
+    border-bottom: none;
+}
+
+.review-item p {
+    color: #cccccc; /* Light text */
+    margin: 5px 0;
+}
+
+.review-item strong {
+    color: #ffffff; /* Highlighted text */
+}
