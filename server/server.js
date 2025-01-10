@@ -11,15 +11,9 @@ const { getAuth, signInWithEmailAndPassword , createUserWithEmailAndPassword, up
 const { getFirestore, doc, setDoc, getDoc, collection, getDocs, updateDoc, deleteDoc, addDoc, query, where} = require("firebase/firestore");
 
 
-// Firebase configuration object (replace with your Firebase project's config)
+// Firebase configuration object 
 const firebaseConfig = {
-    apiKey: "AIzaSyDuy6Ma_f4uHQFiM2N_SyJnD7_k7eE4Mdo",
-    authDomain: "se3316-lab4-936a7.firebaseapp.com",
-    databaseURL: "https://se3316-lab4-936a7-default-rtdb.firebaseio.com",
-    projectId: "se3316-lab4-936a7",
-    storageBucket: "se3316-lab4-936a7.firebasestorage.app",
-    messagingSenderId: "694963918772",
-    appId: "1:694963918772:web:05fcb52986a774ac2184e1"
+    //private firebase Config
   };
 
 // Initialize Firebase app
